@@ -1,0 +1,163 @@
+
+    *{
+    margin: 0px;
+}
+body{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 16px;
+    line-height: 1.6em;
+    margin:0;
+}
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+}
+/*a:hover{
+    color:blue;
+}*/
+
+
+.header{
+    background-color: coral;
+    color:white;
+    padding:25px;
+}
+#nav{
+    background-color:blue;
+    color: white;
+    padding:20px;
+overflow:hidden;
+}
+#nav a{
+    text-decoration: none;
+    float:left;
+    display:block;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+    padding-right: 15px;
+}
+#nav a:hover{
+    background-color: grey;
+    color:black;
+    transition:1s;
+}
+#nav ul{
+    margin:8px 0 0 0; 
+    list-style: none;
+    color:white;
+    padding:0;
+    
+}
+#nav li{
+    display: inline;
+}
+.side-nav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index: 1;
+    top:0px;
+    left:0px;
+    background-color: #000;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top:40px;
+    transition:0.5s
+}
+.side-nav a{
+    padding:10px 10px 10px 30px;
+    text-decoration: none;
+    font-size:22px;
+    color:grey;
+    display:block;
+    transition:0.5s;
+}
+.side-nav a:hover{
+    color:white;
+}
+.side-nav .btn-close{
+    position:absolute;
+    top:0;
+    right:22px;
+    font-size:36px;
+    margin-left:50px;
+
+}
+#main-main{
+    transition:margin-left 0.5s;
+overflow:hidden;
+width:100%;
+}
+#showcase{
+background-image:url('img.jpg');
+min-height:300px;
+padding-bottom:30px; 
+text-align:center;
+position:relative; }
+.button{
+    background-color: azure;
+    color:black;
+    padding:10px;
+    top:30px;
+    /*bottom:30px;*/
+    position:absolute;
+    box-sizing: border-box;
+}
+
+#showcase h1{
+    color:white;
+    line-height:1.em;
+    font-size: 30px;
+    padding-bottom:17px;
+}
+
+#main{
+    float:left;
+    width: 70%;
+    padding:0 30px;
+    margin-top:10px;
+    box-sizing: border-box;
+}
+#side{
+    float:right;
+    width: 30%;
+    background-color: #000;
+    color:#fff;
+    padding:30px;
+    margin-top:10px;
+    box-sizing: border-box;
+}
+#footer{
+    background-color: #000;
+    color:white;
+    text-align: center;
+    padding:25px;
+    margin-top:50px;
+}
+@media(max-width:600px){
+.ul{
+        display: none;
+    }
+    #main{
+        width:100%;
+        float:none;
+    }
+    #side{
+        width:100%;
+        float:none;
+    }
+    .button{
+        top:80px;
+        
+    }
+}
+@media(min-width:600px){
+    .open-side{
+        display:none;
+    }
+}

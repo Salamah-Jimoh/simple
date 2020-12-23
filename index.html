@@ -1,0 +1,90 @@
+<!doctype html>
+<head>
+    <title>website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="main-main">
+<div class="container">
+<h1 class="header">My Website</h1>
+</div>
+<div class="container">
+   <div id="nav">
+       <div class="nav-bar">
+       <span class="open-side">
+           <a href="#" onClick="OpenSideMenu()">
+               <svg width="30" height="30">
+                   <path d ="M0, 5, 30, 5" stroke="#fff" stroke-width="5"/>
+                   <path d ="M0, 14, 30, 14" stroke="#fff" stroke-width="5"/>
+                   <path d ="M0, 23, 30, 23" stroke="#fff" stroke-width="5"/>
+                   </svg>
+           </a>
+       </span>
+       <ul class="ul">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+         
+    
+   
+       </div><!--navbar ends-->
+</div>
+</div>
+<div id="sideMenu" class="side-nav">
+    <a href="#" class="btn-close" onClick="CloseSideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+<!--sidenav ends-->
+<div class="container">
+<section id="showcase">
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,</h1>
+<a class="button" href="#">Click Here</a>
+    </div>
+    </section>
+    <div class="container">
+    <section id="main">
+    <h1>Hello World!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, fugiat repudiandae voluptatibus
+         fugit quae explicabo maiores laudantium distinctio sit animi. Debitis atque quasi mollitia nisi molestias possimus cupiditate 
+         itaque
+          fuga?
+          </p>
+          </section>
+          <aside id="side">
+          <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit quam sunt 
+              iure voluptate voluptatis, libero ullam at! Temporibus laboriosam suscipit aperiam eius nihil
+              </p>
+              </aside>
+            </div>
+            </div><!--main stops-->
+            <footer id="footer">
+                <p>&copy;Salamah 2020</p>
+                </footer>
+                
+              
+
+
+
+
+
+
+
+
+            </body>
+            <script>
+                function OpenSideMenu(){
+                    document.getElementById('sideMenu').style.width="200px";
+                    document.getElementById('main-main').style.marginLeft="200px";
+                }
+                function CloseSideMenu(){
+                    document.getElementById('sideMenu').style.width="";
+                    document.getElementById('main-main').style.marginLeft="";
+                }
+            </script>
+</div><!--container stop-->
+</body>
+</html>
